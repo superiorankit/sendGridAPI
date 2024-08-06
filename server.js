@@ -4,7 +4,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.get('/mailTrack', (req, res) => {
+app.post('/mailTrack', (req, res) => {
     console.log('hitted')
     const events = req.body;
     if (!events)
