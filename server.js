@@ -11,7 +11,7 @@ app.post('/mailTrack', (req, res) => {
         return res.status(300).send('Status not recieved')
     try{
     events.forEach(event => {
-        console.log(`Event: ${event.event}, Email: ${event.email}`);
+        console.log(event);
     });
     return res.status(200).send('Status recieved')
 }
